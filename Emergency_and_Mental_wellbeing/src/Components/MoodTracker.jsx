@@ -52,6 +52,7 @@ const MoodTracker = () => {
                     <li><a href='/mood-track'>Mood Track</a></li>
                     <li><a href='/news-api'>News API</a></li>
                     <li><a href='/task-management'>Task Management</a></li>
+                    <li><a href='/'>Logout</a></li>
                 </ul>
             </nav>
         </header>
@@ -79,7 +80,6 @@ const MoodTracker = () => {
           value={journalEntry}
           onChange={(e) => setJournalEntry(e.target.value)}
           className="journal-entry"
-          required
         />
 
         <h3>Additional Metrics</h3>
@@ -92,7 +92,6 @@ const MoodTracker = () => {
               onChange={(e) => setSleepHours(Number(e.target.value))}
               min="0"
               max="24"
-              required
             />
           </label>
           <label>
@@ -102,7 +101,6 @@ const MoodTracker = () => {
               value={waterIntake}
               onChange={(e) => setWaterIntake(Number(e.target.value))}
               min="0"
-              required
             />
           </label>
         </div>
