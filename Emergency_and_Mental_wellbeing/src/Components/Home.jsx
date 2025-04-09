@@ -5,11 +5,6 @@ import '../Styles/Home.css'
 export const Home = () => {
     const navigate = useNavigate(); 
     const [showSignUp, setShowSignUp] = useState(false);
-    
-    const handleLogout = () => {
-      // Optional: Clear any auth data (e.g., localStorage.removeItem('token'))
-      navigate('/');
-  };
 
   return (
     <div className='home_Section'>
@@ -25,6 +20,7 @@ export const Home = () => {
               <li><a href='/mood-track'>Mood Track</a></li>
               <li><a href='/news-api'>News API</a></li>
               <li><a href='/task-management'>Task Management</a></li>
+              <li><a href='/'>Logout</a></li>
             </ul>
           </nav>
         </header>
@@ -42,7 +38,7 @@ export const Home = () => {
                     <p>Discover personalized videos to uplift your mental wellbeing.</p>
                     <h3>Mood Tracker</h3>
                     <p>Track your emotions daily.</p>
-                    <button onClick={handleLogout}>Logout</button>
+                   
                 </div>
         </main>
        
