@@ -10,7 +10,7 @@ import java.util.*;
 @CrossOrigin(origins = "http://localhost:5173") // Allows requests from frontend
 public class ChatbotController {
 
-    private static final String GEMINI_API_KEY = "AIzaSyCI2whM2-4aAnDNOTiJZ5miiDgR3KiLAnY";  // Replace with your OpenRouter API key
+    private static final String GEMINI_API_KEY = "ADD_YOUR_GEMINI_API_KEY";  // Replace with your Gemini API key
     private static final String GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=" + GEMINI_API_KEY;
 
     private List<String> conversationHistory = new ArrayList<>();
