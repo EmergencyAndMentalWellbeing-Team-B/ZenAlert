@@ -28,7 +28,7 @@ public class NewsService {
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .queryParam("q", query)
-                        .queryParam("apiKey", "f86f980079d64afaa48db4ec77f15f23") // Replace with your NewsAPI key
+                        .queryParam("apiKey", "REPLACE_THIS_WITH_YOUR_KEY") // Replace with your NewsAPI key fromm newsapi.org
                         .build())
                 .retrieve()
                 .bodyToMono(String.class)
